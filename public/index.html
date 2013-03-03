@@ -12,22 +12,33 @@
   </head>
   <body>
     <script id="home-template" type="text/template">
-      <header id="primary-header">
-        <h1>Animalgrams</h1>
-      </header>
       <form id="animalgrams-form">
         <input id="animalgram-input" type="text" name="animalgram">
       </form>
       <div class="responses">
       </div>
-      <footer id="primary-footer">
-        <nav>
-          <button class="footer-button">API</button>
-          <button class="footer-button">About</button>
-          <button class="footer-button">Repo</button>
-        </nav>
-      </footer>
     </script>
+    <script id="about-template" type="text/template">
+      <div class="inner-content">
+        <p>This app was created by Gabe Isman and John West. It finds animalgrams.</p>
+      </div>
+      <footer id="primary-footer">
+    </script>
+    <script id="api-template" type="text/template">
+      <div class="inner-content">
+        <p>We have an API.</p>
+      </div>
+    </script>
+    <header id="primary-header">
+      <h1>Animalgrams</h1>
+    </header>
     <div class="content"></div>
+    <footer id="primary-footer">
+      <nav>
+        <a href="#api"><button class="footer-button">API</button></a>
+        <a href="#about"><button class="footer-button">About</button></a>
+        <a href="https://github.com/gabeisman/animalgrams"><button class="footer-button">Repo</button></a>
+      </nav>
+    </footer>
   </body>
 </html>

@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0; }
 
+a {
+  color: inherit;
+  text-decoration: none; }
+
 h1,
 h2,
 h3,
@@ -13,7 +17,7 @@ h5 {
 
 p {
   font-family: "Helvetica Neue";
-  font-size: 12px; }
+  font-size: 15px; }
 
 html,
 body {
@@ -24,7 +28,7 @@ body {
 header#primary-header {
   border-bottom: 10px solid white;
   border-top: 10px solid white;
-  position: absolute;
+  position: relative;
   top: 10px;
   width: 100%;
   height: 100px; }
@@ -34,6 +38,15 @@ header#primary-header {
     line-height: 110px;
     text-align: center;
     text-transform: uppercase; }
+
+.inner-content {
+  color: white;
+  font-size: 15px;
+  margin: 100px auto 0 auto;
+  position: relative;
+  text-align: center;
+  width: 55%;
+  height: auto; }
 
 form#animalgrams-form {
   margin-top: -22.5px;
