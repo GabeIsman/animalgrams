@@ -4,7 +4,7 @@
  */
 
 var express = require('express')
-  , routes = require('./routes')
+  , anagram = require('./routes/anagram')
   , http = require('http')
   , path = require('path');
 
@@ -18,13 +18,15 @@ app.configure(function(){
   app.use(express.methodOverride());
   app.use(express.cookieParser('animalgrams is the shit'));
   app.use(express.session());
-  app.use(app.router);
   app.use(express.static(path.join(__dirname, 'public')));
+  app.use(app.router);
 });
 
 app.configure('development', function(){
   app.use(express.errorHandler());
 });
+
+app.get(/\/([\w\/]+)/, anagram.anagram);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
