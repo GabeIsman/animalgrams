@@ -15,7 +15,70 @@ p {
   font-family: "Helvetica Neue";
   font-size: 12px; }
 
-header#primary-header {
-  background-color: red;
+html,
+body {
+  background-color: #ff6400;
   width: 100%;
-  height: 200px; }
+  height: 100%; }
+
+header#primary-header {
+  border-bottom: 10px solid white;
+  border-top: 10px solid white;
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  height: 100px; }
+  header#primary-header h1 {
+    color: white;
+    font-size: 70px;
+    line-height: 110px;
+    text-align: center;
+    text-transform: uppercase; }
+
+form#animalgrams-form {
+  margin-top: -22.5px;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  height: 45px; }
+  form#animalgrams-form input#animalgram-input {
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 10px solid white;
+    color: white;
+    display: block;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    width: 50%;
+    height: 25px; }
+
+footer {
+  border-top: 10px solid white;
+  border-bottom: 10px solid white;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  height: 100px; }
+  footer nav {
+    margin: 0 auto;
+    width: 55%;
+    height: 100%; }
+    footer nav button {
+      background-color: transparent;
+      border: 10px solid white;
+      color: white;
+      cursor: pointer;
+      display: block;
+      float: left;
+      font-family: "ChunkFive";
+      font-size: 15px;
+      margin-left: 3%;
+      margin-top: 10px;
+      text-align: center;
+      text-transform: uppercase;
+      width: 30%;
+      height: 80px; }
+    footer nav button:hover {
+      background-color: rgba(255, 255, 255, 0.25); }
