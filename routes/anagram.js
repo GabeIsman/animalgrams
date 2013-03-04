@@ -7,8 +7,9 @@ var _ = require('underscore');
  *
  */
 exports.anagram = function (req, resp, dict) {
-
-	resp.send(dict.isWord());
+	var alphabet = req.params[0].split('').sort();
+	var results = generateAnagrams(alphabet, dict);
+	resp.send(results);
 };
 
 exports.loadDictionary = function (filename) {
