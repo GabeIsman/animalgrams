@@ -26,7 +26,11 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
-app.get(/\/([\w\/]+)/, anagram.anagram);
+dict = anagram.loadDictionary();
+
+app.get(/\/([\w\/]+)/, function (req, resp) {
+  anagram.anagram(req, resp, dict);
+});
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
