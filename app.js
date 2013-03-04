@@ -26,7 +26,7 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
-dict = anagram.loadDictionary();
+dict = anagram.loadDictionary('/usr/share/dict/words');
 
 app.get(/\/([\w\/]+)/, function (req, resp) {
   anagram.anagram(req, resp, dict);
