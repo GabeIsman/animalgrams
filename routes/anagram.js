@@ -1,6 +1,7 @@
 
 var trieLib = require('../lib/trie.js');
 var fs = require('fs');
+var _ = require('underscore');
 
 /**
  *
